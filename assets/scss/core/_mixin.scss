@@ -1,0 +1,27 @@
+%inline-flex-center{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+%flex-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+// Mixin
+@mixin position($position,$top:null,$left:null,$bottom:null,$right:null){
+    position:$position;
+    top:$top;
+    left:$left;
+    bottom:$bottom;
+    right:$right;
+}
+@mixin relative($args...){
+    @include position(absolute,$args...);
+}
+@mixin absolute($args...){
+    @include position(absolute,$args...);
+}
+@mixin fixed($args...){
+    @include position(fixed,$args...);
+}

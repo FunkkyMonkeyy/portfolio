@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "custom";
+
+//Boostrap
+@import "../bootstrap/bootstrap";
+// Icon
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import "../fonts/Awesome/all.css";
+// Core
+@import "core/fonts";
+@import "core/mixin";
+@import "core/font-size";
+@import "core/reset";
+@import "core/title";
+@import "core/buttons";
+@import "core/animations";
+// Plugins
+// Layout
+@import "layout/form";
+@import "layout/header";
+@import "layout/menu";
+@import "layout/footer";
+//Page
+@import "page/index";

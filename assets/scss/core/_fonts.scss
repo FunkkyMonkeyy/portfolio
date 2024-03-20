@@ -1,0 +1,213 @@
+$GoogleSans     : true;
+$Cormorant: true;
+$Opensans: true;
+$font-custom-class: (
+    "cormorant"    : "Cormorant",
+    "google"        : "Google Sans",
+    "open"        : "Open Sans",
+);
+$font-custom-use:(
+    "primary" : "Open Sans",
+    "secondary": "Cormorant",
+);
+@each $class, $name in $font-custom-class {
+    .f-#{$class} {
+        font-family: $name,sans-serif;
+    }
+}
+@each $class, $name in $font-custom-use {
+    .f-#{$class} {
+        font-family: $name,sans-serif;
+    }
+}
+// Font Add
+@if $GoogleSans {
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+        src:  url("fonts/GoogleSansPlus/GoogleSans-Light.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Light.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src:  url("fonts/GoogleSansPlus/GoogleSans-Regular.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Regular.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+        src: url("fonts/GoogleSansPlus/GoogleSans-Italic.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Italic.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+        src:  url("fonts/GoogleSansPlus/GoogleSans-Medium.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Medium.woff") format("woff");
+    }
+    @font-face {
+        font-family: "Google Sans";
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+        src:  url("fonts/GoogleSansPlus/GoogleSans-Bold.woff2") format("woff2"),
+            url("fonts/GoogleSansPlus/GoogleSans-Bold.woff") format("woff");
+    }
+}
+@if $Cormorant{
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 300;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 300;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-LightItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 300;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 300;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-LightItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 400;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 400;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-Italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 500;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 500;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-MediumItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 600;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-SemiBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 600;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-SemiBoldItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 700;
+        font-style: normal;
+        src:  url("fonts/Cormorant/Cormorant-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Cormorant";
+        font-weight: 700;
+        font-style: italic;
+        src:  url("fonts/Cormorant/Cormorant-BoldItalic.ttf") format("truetype");
+    }
+}
+@if $Opensans{
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-LightItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-MediumItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-SemiBoldItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 700;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-style: normal;
+        src:  url("fonts/OpenSans/OpenSans-ExtraBold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-style: italic;
+        src:  url("fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf") format("truetype");
+    }
+}
